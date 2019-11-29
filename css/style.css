@@ -1,41 +1,39 @@
 @font-face {
-	font-family: "heebo-regular";
-	src: url("../font/heebo/Heebo-regular.ttf");
-}
-
-@font-face {
-	font-family: "heebo-regualar";
-	src: url("../font/heebo/Heebo-Regular.ttf");
+	font-family: "opensans-light";
+	src: url("../font/OpenSans-Light.ttf");
 }
 
 body {
-	font-family: "heebo-regualar";
+	font-family: "opensans-light";
 }
+
 .tittle {
 	text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 50px;
+	margin-top: 3vh;
+	margin-bottom: 50px;
 }
-.tittle h2{
+
+.tittle h2 {
 	font-size: 4rem;
 	text-transform: uppercase;
 	font-weight: 100;
 }
+
 .btn-primary {
 	text-align: center;
 	border: 2px solid #374951;
-	/* margin-left: 10px; */
 	padding: 15px 60px;
 	font-weight: 600;
 	color: #374951;
 	cursor: pointer;
 	background-color: transparent;
 	margin: 20px 30px;
-	font-family: "heebo-regular";
 }
-.main-section{
+
+.main-section {
 	height: 100vh;
 }
+
 .btn-primary:hover {
 	background-color: #374951;
 	color: #fff;
@@ -50,11 +48,10 @@ body {
 }
 
 .install {
-	font-size: 1.6em;
+	font-size: 2.2em;
 	font-weight: 600;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	font-family: "heebo-regular";
 }
 
 li {
@@ -63,421 +60,174 @@ li {
 	color: #374951;
 }
 
-.feature-div {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 90px 0;
-	margin-bottom: 80px;
+.feature-section {
+	padding-top: 100px;
 }
 
-.feature-one, .feature-image {
-	margin-top: auto;
-	margin-bottom: auto;
+.feature-one, .feature {
+	margin-top: 50px;
+	margin-bottom: 50px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .feature-text {
-	font-size: 1.2em;
-	font-weight: 500;
-	font-family: "heebo-regular";
+	font-size: 2em;
+	font-weight: 600;
 }
-.feature{
-	width:100%;
-	height:100%;
-}
-.strict-mode {
-	display: flex;
+
+.feature-image {
+	width: 400px;
+	height: auto;
 }
 
 p {
 	color: #374951;
-}
-
-.strict-text {
-	color: black;
-	font-weight: 600;
 	font-size: 1.3em;
-	font-family: "heebo-regular";
 }
 
-.strict-paragraph {
-	font-size: 1.1em;
-	margin-left: 10px;
-	color: #374951;
-	font-weight: 500;
-	word-spacing: 1px;
-}
-
-.team-pic {
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-}
-
-.second-div {
-	display:block;
-	position: relative;
-	width: 120px;
-	height: 120px;
-	margin-left:auto;
-	margin-right:auto;
-	animation-name: floatingUp;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-}
-.third-div{
-	display:block;
-	position: relative;
-	width: 130px;
-	height: 130px;
-	margin-left:auto;
-	margin-right:auto;
-	animation-name: floatingDown;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-}
-
-.fourth-div{
-	display:block;
-	position: relative;
-	width: 120px;
-	height: 120px;
-	animation-name: floating;
-	animation-duration: 6s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-}
-.fifth-div{
-	display:block;
-	position: relative;
-	width: 70px;
-	height: 70px;
-	margin-left:auto;
-	margin-right:auto;
-	animation-name: floatingDown;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-}
-.xenox-logo {
-	width: 80px;
-	height: 80px;
-	margin-top: 8px;
-}
-
-.made-by {
-	font-size: 1.2em;
+.feature p {
 	font-weight: 600;
-	word-spacing: 4px;
-	color: #fff;
-}
-
-.footer {
-	padding-top: 60px;
-	padding-bottom: 20px;
-	background-color: #0b0d18;
-}
-
-.custom-button {
-	text-align: center;
-	padding: 15px 60px;
-	font-weight: 600;
-	color: #fff;
-	cursor: pointer;
-	margin: 20px 30px;
-	background-color: transparent;
-	border-radius: 5px;
-	font-size: 16px;
-}
-
-.custom-button:hover {
-	color: #0b0d18;
-	background-color: #fff;
-	border-color: #fff;
 }
 
 .footer-section {
 	margin-top: 30px;
 }
 
-@keyframes floating {
-	from {
-		transform: translate(0, 0px);
-	}
-	65% {
-		transform: translate(0, 15px);
-	}
-	to {
-		transform: translate(0, -0px);
-	}
+.feature-detail {
+	font-size: 18rem;
+	font-weight: 700;
 }
 
-@keyframes floatingUp {
-	from {
-		transform: translate(0, 0px);
-	}
-	15% {
-		transform: translate(0, 5px);
-	}
-	40% {
-		transform: translate(0, 10px);
-	}
-	60% {
-		transform: translate(0, 20px);
-	}
-	to {
-		transform: translate(0, -0px);
-	}
+.feature-section {
+	margin-bottom: 100px;
 }
 
-@keyframes floatingDown {
-	from {
-		transform: translate(0, 0px);
-	}
-	15% {
-		transform: translate(0, 2px);
-	}
-	40% {
-		transform: translate(0, 12px);
-	}
-	60% {
-		transform: translate(0, 25px);
-	}
-	to {
-		transform: translate(0, -0px);
-	}
-}
-
-.d-grid {
-	DISPLAY: grid;
-	grid-template-columns: 1fr 0fr;
-	grid-template-rows: 130px;
-}
-
-.team {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-}
-.sarthak-pic{
-	display: block;
-	margin: auto;
-	position: relative;
-	width: 100px;
-	height: 100px;
-	border-radius:50%;
-}
-.utkarsh-pic{
-	display: block;
-	margin: auto;
-	position: relative;
-	width: 110px;
-	height: 110px;
-	border-radius:50%;
-}
-.shilpa-pic{
-	display: block;
-	margin: auto;
-	position: relative;
-	width: 70px;
-	height: 70px;
-	border-radius:50%;
-}
-.pawan-pic{
-	display: block;
-	margin: auto;
-	position: relative;
-	width: 120px;
-	height: 120px;
-	border-radius:50%;
-}
-.kunal-pic {
-	display: block;
-	margin: auto;
-	position: relative;
-	width: 120px;
-	height: 120px;
-	border-radius:50%;
-}
-.latika-pic{
-	display:block;
-	margin:auto;
-	position: relative;
-	width:115px;
-	height:115px;
-	border-radius:50%;
-}
-.Akshay-pic {
-	width: 110px;
-	height: 110px;
-	display: block;
-	margin: auto;
-	border-radius:50%;
-}
-.krishna-pic{
-	width: 70px;
-	height: 70px;
-	display: block;
-	margin: auto;
-	border-radius:50%;
-}
-.Manmeet-pic{
-	width:100px;
-	height:100px;
-	display: block;
-	margin: auto;
-	border-radius:50%;
-}
-.hover-div {
-	position: relative;
-	width: 100px;
-	height: 100px;
-	animation-name: floating;
-	animation-duration: 6s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	cursor: pointer;
-	text-align: center;
-}
-
-.hover-div:hover .fa-twitter {
-	visibility: visible;
-	bottom:10px;
-	right: 55px;
-}
-
-.hover-div:hover .fa-github {
-	visibility: visible;
-	bottom:10px;
-	right: 30px;
-}
-.third-div:hover .fa-twitter {
-	visibility: visible;
-	bottom:15px;
-	right: 65px;
-}
-.third-div:hover .fa-github{
-	visibility: visible;
-	bottom:15px;
-	right: 40px;
-}
-.second-div:hover .fa-twitter {
-	visibility: visible;
-	bottom:20px;
-	right: 65px;
-}
-.second-div:hover .fa-github{
-	visibility: visible;
-	bottom:20px;
-	right: 35px;
-}
-.fourth-div:hover .fa-twitter{
-	visibility: visible;
-	bottom:10px;
-	right:65px;
-}
-.fourth-div:hover .fa-github{
-	visibility: visible;
-	bottom:10px;
-	right:40px;
-}
-.fifth-div:hover .fa-twitter{
-	visibility: visible;
-	bottom:10px;
-	right:38px;
-}
-.fifth-div:hover .fa-github{
-	visibility: visible;
-	bottom:10px;
-	right:15px;
-}
-.fa-twitter, .fa-github {
-	visibility: hidden;
-	color: white;
-	position: absolute;
-	right: 10px;
-}
 .producthunt {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    z-index: 9000;
-    padding: 10px;
-    cursor: pointer;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	z-index: 9000;
+	padding: 10px;
+	cursor: pointer;
 }
-.close-it {
-    font-size: 10px;
-	font-family: "heebo-regualar";
-    color: #173947;
-    text-align: right;
-    cursor: pointer;
-}
+
 .producthunt img {
-    width: 90px;
-    margin: 0 auto;
-    display: block;
+	width: 90px;
+	margin: 0 auto;
+	display: block;
 }
-.button-pro p {
-    font-size: 10px;
-    color: #173947;
-    text-align: center;
-    font-family: "heebo-regualar";
+
+.producthunt:hover {
+	-webkit-animation-name: shake;
+	animation-name: shake;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
-.product-link, .product-link a {
-    color: #e56166;
-	font-family: "heebo-regualar";
-    font-size: 10px;
-    text-align: center;
-    margin: 10px auto;
-    cursor: pointer;
-    width: 40%;
-    padding: 4px 0;
-}
-.product-link {
-    border: 1px solid #e56166;
-}
-@media only screen and (max-width:1199px){
-	.custom-button {
-		text-align: center;
-		padding: 15px 40px;
+
+@keyframes shake {
+	from, to {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
 	}
-}
-@media only screen and (max-width:991px){
-	.container {
-		max-width: 900px;
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-5px, 0, 0);
+	}
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
 	}
 }
 
 .btn img {
-    width: 32px;
-    margin-right: 17px;
+	width: 32px;
+	margin-right: 17px;
 }
 
 .github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
+	animation: octocat-wave 560ms ease-in-out;
 }
+
 @keyframes octocat-wave {
-    0%,
-    100% {
-        transform: rotate(0);
-    }
-    20%,
-    60% {
-        transform: rotate(-25deg);
-    }
-    40%,
-    80% {
-        transform: rotate(10deg);
-    }
+	0%, 100% {
+		transform: rotate(0);
+	}
+	20%, 60% {
+		transform: rotate(-25deg);
+	}
+	40%, 80% {
+		transform: rotate(10deg);
+	}
 }
+
+.copyright-link {
+	font-size: 17px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.copyright-link p {
+	margin: 0;
+	text-align: center;
+	color: #173947;
+}
+
+.copyright-link a {
+	color: #173947;
+}
+
+.copyright-link span {
+	color: red;
+}
+
+.copyright-link .join-us {
+	margin-left: 10px;
+	color: #374951;
+	font-size: 1.3em;
+	display: grid;
+	align-content: center;
+}
+
+.copyright-link img {
+	width: 20px;
+	height: 20px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+@media only screen and (max-width:1199px) {
+	.custom-button {
+		text-align: center;
+		padding: 15px 40px;
+	}
+	.nomoogle-image {
+		width: 600px;
+	}
+	.tittle {
+		text-align: center;
+		margin-top: 10vh;
+	}
+}
+
+@media only screen and (max-width:991px) {
+	.container {
+		max-width: 900px;
+	}
+	.feature-text{
+		font-size:1.8em;
+	}
+}
+
 @media (max-width: 500px) {
-    .github-corner:hover .octo-arm {
-        animation: none;
-    }
-    .github-corner .octo-arm {
-        animation: octocat-wave 560ms ease-in-out;
-    }
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
 }
