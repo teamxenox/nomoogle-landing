@@ -18,23 +18,26 @@ body {
 	text-transform: uppercase;
 	font-weight: 100;
 }
-
-.btn-primary {
+.paragraph{
+	margin-bottom:0;
+}
+.custom-primary {
 	text-align: center;
-	border: 2px solid #374951;
-	padding: 15px 60px;
+	border: 2px solid #374951 !important;
+	padding: 10px 60px !important;
 	font-weight: 600;
 	color: #374951;
 	cursor: pointer;
 	background-color: transparent;
-	margin: 20px 30px;
+	margin: 10px 30px;
+	width:350px;
 }
 
 .main-section {
 	height: 100vh;
 }
 
-.btn-primary:hover {
+.custom-primary:hover {
 	background-color: #374951;
 	color: #fff;
 	border: 2px solid #374951;
@@ -72,9 +75,23 @@ li {
 	margin-right: auto;
 }
 
+.chrome-gif {
+	margin: 20px auto;
+}
+
+.gif {
+	width: 350px;
+	height: auto;
+}
+
+.d-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 .feature-text {
 	font-size: 2em;
-	font-weight: 600;
+	font-weight: 550;
 }
 
 .feature-image {
@@ -84,7 +101,8 @@ li {
 
 p {
 	color: #374951;
-	font-size: 1.3em;
+	font-size: 1.2em;
+	font-weight: 500;
 }
 
 .feature p {
@@ -97,7 +115,6 @@ p {
 
 .feature-detail {
 	font-size: 18rem;
-	font-weight: 700;
 }
 
 .feature-section {
@@ -200,8 +217,17 @@ p {
 	margin-left: 5px;
 }
 
+.chrome-heading {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.extension-button {
+	text-align: right;
+}
+
 @media only screen and (max-width:1199px) {
-	.custom-button {
+	.custom-button, .custom-primary {
 		text-align: center;
 		padding: 15px 40px;
 	}
@@ -212,14 +238,50 @@ p {
 		text-align: center;
 		margin-top: 10vh;
 	}
+	.chrome-heading {
+		font-size: 1.2em;
+	}
+	p {
+		font-size: 1.1em;
+	}
 }
 
 @media only screen and (max-width:991px) {
 	.container {
 		max-width: 900px;
 	}
-	.feature-text{
-		font-size:1.8em;
+	.feature-text {
+		font-size: 1.8em;
+	}
+	p {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.d-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (max-width:767px) {
+	.extension-button {
+		text-align: center;
+	}
+	.firefox-extension {
+		text-align: center;
+	}
+	.nomoogle-image {
+		width: 500px;
+	}
+	.feature-text {
+		font-size: 1.2em;
+	}
+	p {
+		font-size: 0.9em;
+	}
+	.custom-primary {
+		width: 350px;
 	}
 }
 
@@ -229,5 +291,88 @@ p {
 	}
 	.github-corner .octo-arm {
 		animation: octocat-wave 560ms ease-in-out;
+	}
+	.nomoogle-image {
+		width: 300px;
+	}
+	.copyright-link .join-us {
+		margin-left: 10px;
+		color: #374951;
+		font-size: 0.9em;
+		display: grid;
+		align-content: center;
+	}
+	.chrome-heading {
+		font-size: 0.9em;
+	}
+	p {
+		font-size: 0.7em;
+	}
+}
+
+@media only screen and (max-width:460px) {
+	.copyright-link .join-us {
+		font-size: 0.7em;
+	}
+}
+
+@media only screen and (max-width:440px) {
+	.tittle h2 {
+		font-size: 2.2rem;
+	}
+	.producthunt img {
+		width: 80px;
+		margin: 0 auto;
+		display: block;
+	}
+	.feature-image {
+		width: 300px;
+		height: auto;
+	}
+	.custom-primary {
+		width: 320px;
+		padding:10px 5px !important;
+	}
+}
+
+@media only screen and (max-width:375px) {
+	.nomoogle-image {
+		width: 200px;
+	}
+	.custom-primary {
+		text-align: center;
+		border: 2px solid #374951 !important;
+		padding: 15px 30px !important;
+		font-weight: 600;
+		color: #374951;
+		cursor: pointer;
+		background-color: transparent;
+		margin: 10px 20px;
+	}
+	.producthunt img {
+		width: 55px;
+	}
+	.feature-detail {
+		font-size: 10rem;
+	}
+	.feature-text {
+		font-size: 1.1em;
+	}
+	p {
+		font-size: 0.7em;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	.gif {
+		width: 300px;
+	}
+	.custom-primary {
+		width: 280px;
+		padding: 10px 10px !important;
+		margin: 5px;
+	}
+	p {
+		margin-bottom: 2px;
 	}
 }
