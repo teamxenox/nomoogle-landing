@@ -87,6 +87,7 @@ li {
 .d-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 40px;
 }
 
 .feature-text {
@@ -95,8 +96,12 @@ li {
 }
 
 .feature-image {
-	width: 400px;
+	width: 550px;
 	height: auto;
+}
+.first-feature-image{
+	width:400px;
+	height:auto;
 }
 
 p {
@@ -244,6 +249,9 @@ p {
 	p {
 		font-size: 1.1em;
 	}
+	.feature-image{
+		width:450px;
+	}
 }
 
 @media only screen and (max-width:991px) {
@@ -283,6 +291,7 @@ p {
 	.custom-primary {
 		width: 350px;
 	}
+
 }
 
 @media (max-width: 500px) {
@@ -308,6 +317,10 @@ p {
 	p {
 		font-size: 0.7em;
 	}
+	.feature-image {
+		width: 300px;
+		height: auto;
+	}
 }
 
 @media only screen and (max-width:460px) {
@@ -328,6 +341,9 @@ p {
 	.feature-image {
 		width: 300px;
 		height: auto;
+	}
+	.first-feature-image{
+		width:300px;
 	}
 	.custom-primary {
 		width: 320px;
